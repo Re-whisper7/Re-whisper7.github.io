@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+ <html lang="zh-CN">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>我的个人主页</title>
+     <style>
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+         }
+         body {
+             background-image: linear-gradient(to right, rgba(200,225,255,0.4), rgba(230,240,255,0.4));
+             min-height: 100vh;
+             font-family: "Microsoft YaHei", "SimHei", sans-serif;
+             padding: 40px 15px;
+         }
+         .container {
+             max-width: 700px;
+             margin: 0 auto;
+         }
+         .card {
+             background-color: rgba(255, 255, 255, 0.92);
+             padding: 35px 30px;
+             border-radius: 18px;
+             box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+             margin-bottom: 28px;
+             transition: all 0.3s ease;
+         }
+         
+         .card:hover {
+             transform: translateY(-6px);
+             box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+         }
+         .avatar {
+             width: 160px;
+             height: 160px;
+             border-radius: 50%;
+             object-fit: cover;
+             display: block;
+             margin: 0 auto 22px;
+             border: 4px solid #88b8e6;
+         }
+         h1 {
+             text-align: center;
+             color: #2c4d80;
+             margin-bottom: 18px;
+             font-size: 26px;
+         }
+         .intro {
+             line-height: 1.85;
+             font-size: 16px;
+             color:#333;
+             text-align: center;
+         }
+         .intro strong {
+             color:#e64a19;
+         }
+         h2 {
+             margin: 10px 0 16px;
+             color:#34568b;
+             border-left:5px solid #639cd9;
+             padding-left:12px;
+             font-size:20px;
+         }
+         .hobby-list {
+             list-style-position: inside;
+             padding-left: 8px;
+         }
+         .hobby-list li {
+             margin:16px 0;
+             font-size:15px;
+         }
+         .progress-wrap {
+             width:100%;
+             height:14px;
+             background-color:#e8edf2;
+             border-radius:7px;
+             margin-top:8px;
+         }
+         .progress-bar {
+             height:100%;
+             border-radius:7px;
+             background:linear-gradient(to right,#5499e7,#73b6f0);
+         }
+         .link-box {
+             margin-top:10px;
+         }
+         .link-box a {
+             display:inline-block;
+             padding:9px 20px;
+             background-color:#3b7bcd;
+             color:white;
+             text-decoration:none;
+             border-radius:22px;
+             margin-right:14px;
+             margin-bottom:8px;
+             transition:0.2s;
+         }
+         .link-box a:hover {
+             background-color:#2962b3;
+         }
+     </style>
+ </head>
+ <body>
+     <div class="container">
+         <!-- 个人信息卡片 -->
+         <div class="card">
+             <!-- ⚠️注意：本地测试用图片，上传GitHub不能写Pictures本地路径！
+             上传github请把图片和index.html放同一文件夹，src="壁纸4.jpg" -->
+             <img  src="Pictures/壁纸4.jpg" alt="头像">
+             <h1>👋你好，我是Web初学者</h1>
+             <p class="intro">
+                 我是一名大一学生，正在学习<strong>HTML与CSS网页开发</strong>。
+                 平时喜欢探索网页制作，对前端技术充满热情。
+                 <span style="color:#006699">希望可以不断练习，做出更多好看的网页。</span>
+             </p >
+         </div>
+         <!-- 爱好卡片 -->
+         <div class="card">
+             <h2>我的个人爱好</h2>
+             <ul class="hobby-list">
+                 <li>
+                     写代码
+                     <div class="progress-wrap">
+                         <div class="progress-bar" style="width:75%"></div>
+                     </div>
+                 </li>
+                 <li>
+                     阅读散文
+                     <div class="progress-wrap">
+                         <div class="progress-bar" style="width:85%"></div>
+                     </div>
+                 </li>
+                 <li>
+                     看网页设计案例
+                     <div class="progress-wrap">
+                         <div class="progress-bar" style="width:65%"></div>
+                     </div>
+                 </li>
+                 <li>
+                     听歌
+                     <div class="progress-wrap">
+                         <div class="progress-bar" style="width:90%"></div>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+         <!-- 超链接卡片 -->
+         <div class="card">
+             <h2>相关链接</h2>
+             <div class="link-box">
+                 <a href=" " target="_blank">访问GitHub</a >
+                 <a href="https://www.bing.com" target="_blank">必应搜索</a >
+             </div>
+         </div>
+     </div>
+ </body>
+ </html>
